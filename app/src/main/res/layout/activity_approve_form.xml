@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ApproveForm">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/dimage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:clickable="false"
+            app:srcCompat="@drawable/cameraicon"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="0dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+
+            />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/spin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dimage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+
+            >
+
+
+            <EditText
+                android:id="@+id/type"
+                android:textColor="#000"
+
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Type"
+                android:inputType="none" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/linear2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+
+            >
+
+
+            <EditText
+                android:id="@+id/amount2"
+                android:textColor="#000"
+
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Amount"
+                android:inputType="none" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/linear3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+
+            >
+
+
+            <EditText
+                android:id="@+id/remarks2"
+                android:textColor="#000"
+
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Remarks"
+                android:inputType="none" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/approve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear3"
+            android:layout_alignLeft="@+id/spin"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="40dp"
+            android:text="Approve"
+            android:background="@drawable/button_bg_round"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/reject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear3"
+            android:layout_alignRight="@+id/spin"
+            android:layout_marginTop="41dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/button_bg_round"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:text="Reject"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

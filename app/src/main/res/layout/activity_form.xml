@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp">
+
+
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/cimage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/cameraicon"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:clickable="true"/>
+
+
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/material_spinner1"
+            android:layout_width="300dp"
+            android:layout_below="@+id/cimage"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:hint="Reimbursement Type"
+
+            app:met_floatingLabel="normal"
+            android:textColorHint="#CFD8DC"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/linear2"
+            android:layout_below="@+id/material_spinner1"
+            android:layout_marginTop="10dp"
+
+            >
+
+
+            <EditText
+                android:id="@+id/amount"
+
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Amount"
+                android:inputType="numberDecimal" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/linear3"
+            android:layout_below="@+id/linear2"
+            android:layout_marginTop="10dp"
+
+            >
+
+
+            <EditText
+                android:id="@+id/remarks"
+
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Remarks"
+                android:inputType="textMultiLine" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_marginTop="40dp"
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear3"
+            android:layout_centerHorizontal="true"
+            android:text="Send for Approval"
+            android:background="@drawable/button_bg_round"
+            android:textColor="#ffffff"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="5dp"/>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

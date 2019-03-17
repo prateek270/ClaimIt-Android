@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="1"
+        android:rowCount="3"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false">
+        <android.support.v7.widget.CardView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            android:layout_margin="12dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/tripCard"
+                android:padding="15dp"
+                android:gravity="center">
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/department"
+                    android:text="Japan Trip"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:padding="10dp"
+                    android:layout_below="@+id/status"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total is: 12345"
+                    android:id="@+id/amount"
+                    android:layout_below="@+id/department"
+                    android:paddingLeft="10dp"
+                    android:textSize="20sp"
+                    android:textStyle="italic"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/app"
+                    android:layout_alignRight="@+id/amount"
+                    android:id="@+id/submit"
+                    android:textSize="15sp"
+                    android:text="Submit"
+                    android:background="#C61935"
+
+                    android:textColor="#ffffff"
+
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/submit"
+                    android:layout_alignRight="@+id/amount"
+                    android:id="@+id/edit"
+                    android:textSize="15sp"
+                    android:background="#C61935"
+                    android:layout_marginTop="10dp"
+                    android:text="Edit Name"
+                    android:textColor="#ffffff"
+                    />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </GridLayout>
+
+</LinearLayout>

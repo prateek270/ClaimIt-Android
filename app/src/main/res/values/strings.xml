@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Reimbursement</string>
+    <string name="hint_text">Email</string>
+    <string-array name="Reimbursement_type">
+        <item>Finance</item>
+        <item>Travel</item>
+        <item>Others</item>
+    </string-array>
+
+</resources>
